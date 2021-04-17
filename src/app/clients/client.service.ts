@@ -9,7 +9,7 @@ import { IClient } from "./client";
     providedIn : 'root'
 })
 export class ClientService {
-    private clientUrl = '../assets/clients.json'
+    private clientUrl = 'http://localhost:51044/api/clients';
 
     constructor(private http: HttpClient){}
 
