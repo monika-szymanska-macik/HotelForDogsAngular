@@ -1,0 +1,42 @@
+<div class='card'>
+    <div class='card-header'>
+        {{ pageTitle }}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Filter by:</div>
+            <div class="col-md-4">
+                <input type="text"
+                [(ngModel)] = 'listFilter'/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Filtered by: {{listFilter}}</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table"
+                        *ngIf='clients && clients.length'>
+                <thead>
+                    <tr>
+                        <th>Client Name</th>
+                        <th>Phone Number</th>
+                        <th>Dog</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let client of filteredClients'>
+                        <td>
+                            <a [routerLink] = "['/clients', client.clientId]">
+                                {{ client.client }}
+                            </a>
+                        </td>
+                        <td>{{ client.phoneNumber }}</td>
+                        <td>{{ client.dog | lowercase }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
