@@ -21,7 +21,7 @@ export class ClientDetailComponent implements OnInit {
         this.pageTitle += `: ${id}`;
         this.client = {
             "clientId" : id,
-            "client" : "John Smith",
+            "fullName" : "John Smith",
             "phoneNumber" : "500500500",
             "dog" : "Max",
             "reservation" : "may"

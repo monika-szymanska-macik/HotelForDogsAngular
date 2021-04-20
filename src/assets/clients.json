@@ -1,14 +1,14 @@
 [
     {
             "clientId" : 1,
-            "client" : "John Smith",
+            "fullName" : "John Smith",
             "phoneNumber" : "500500500",
             "dog" : "Max",
             "reservation" : "may"
         },
         {
             "clientId" : 2,
-            "client" : "Peter Francis",
+            "fullName" : "Peter Francis",
             "phoneNumber" : "600500500",
             "dog" : "Rex",
             "reservation" : "april"

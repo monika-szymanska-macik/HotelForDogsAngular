@@ -29,7 +29,7 @@
                     <tr *ngFor='let client of filteredClients'>
                         <td>
                             <a [routerLink] = "['/clients', client.clientId]">
-                                {{ client.client }}
+                                {{ client.fullName }}
                             </a>
                         </td>
                         <td>{{ client.phoneNumber }}</td>

@@ -30,7 +30,7 @@ export class ClientListComponent implements OnInit, OnDestroy {
     performFilter(filterBy : string) : IClient[]{
         filterBy = filterBy.toLocaleLowerCase();
         return this.clients.filter((client: IClient) =>
-            client.client.toLocaleLowerCase().indexOf(filterBy) !== -1);
+            client.fullName.toLocaleLowerCase().indexOf(filterBy) !== -1);
     }
 
     ngOnInit(): void {
