@@ -22,7 +22,7 @@
                     <tr>
                         <th>Client Name</th>
                         <th>Phone Number</th>
-                        <th>Dog</th>
+                        <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,7 +33,11 @@
                             </a>
                         </td>
                         <td>{{ client.phoneNumber }}</td>
-                        <td>{{ client.dog | lowercase }}</td>
+                        <td>
+                            <button class="btn btn-primary">
+                                Edit
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>

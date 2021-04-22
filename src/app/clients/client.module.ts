@@ -4,6 +4,7 @@ import { ClientDetailComponent } from './client-detail.component';
 import { RouterModule } from '@angular/router';
 import { ClientDetailGuard } from './client-detail.guard';
 import { SharedModule } from '../shared/shared.module';
+import { DogComponent } from '../dog/dog.component';
 
 
 
@@ -20,6 +21,10 @@ import { SharedModule } from '../shared/shared.module';
         canActivate: [ClientDetailGuard],
         component: ClientDetailComponent
       },
+      {
+        path: 'clients/:clientId/:dogId',
+        component: DogComponent
+      }
     ]),
     SharedModule
   ]
