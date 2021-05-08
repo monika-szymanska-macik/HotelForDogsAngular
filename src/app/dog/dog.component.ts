@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router'; 
+import { Client } from '../clients/client';
 
 import { IDog } from './dog';
 
@@ -12,6 +13,9 @@ import { IDog } from './dog';
 export class DogComponent implements OnInit {
   pageTitle: string = 'Dog Detail';
   dog!: IDog;
+
+  filteredDogs!: IDog[];
+  dogs : IDog[] = [];
 
   constructor(private route: ActivatedRoute,
               private router: Router) { }

@@ -1,1 +1,37 @@
-<p>dog works!</p>
+<div class='card'>
+    <div class='card-header'>
+        {{ pageTitle }}
+    </div>
+    <div class="card-body">
+        <div class="row">
+
+        </div>
+        <div class="table-responsive">
+            <table class="table"
+                        *ngIf='dogs && dogs.length'>
+                <thead>
+                    <tr>
+                        <th>Dog Name</th>
+                        <th>Weight</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let dog of dogs'>
+                        <td>
+                            <a [routerLink] = "['/dogs', dog.dogId]">
+                                {{ dog.name }}
+                            </a>
+                        </td>
+                        <td>{{ dog.weight }}</td>
+                        <td>
+                            <button class="btn btn-primary">
+                                Edit
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

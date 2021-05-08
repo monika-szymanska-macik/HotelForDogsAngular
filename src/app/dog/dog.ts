@@ -1,3 +1,5 @@
+import { Client } from "../clients/client";
+
 export interface IDog {
     "dogId" : number;
     "name" : string;

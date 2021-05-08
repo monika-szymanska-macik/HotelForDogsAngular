@@ -13,6 +13,7 @@ import { UserSettingsFormComponent } from './user-settings-form/user-settings-fo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { DogComponent } from './dog/dog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -37,7 +38,8 @@ import { DogComponent } from './dog/dog.component';
     ]),
     ClientModule,
     HttpClientModule,
-    ButtonsModule
+    ButtonsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
