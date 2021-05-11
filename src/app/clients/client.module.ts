@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { ClientDetailGuard } from './client-detail.guard';
 import { SharedModule } from '../shared/shared.module';
 import { DogComponent } from '../dog/dog.component';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -26,7 +27,8 @@ import { DogComponent } from '../dog/dog.component';
         component: DogComponent
       }
     ]),
-    SharedModule
+    SharedModule,
+    MaterialModule
   ]
 })
 export class ClientModule { }

@@ -14,6 +14,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { DogComponent } from './dog/dog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { WelcomeModule } from './welcome/welcome.module';
+
 
 
 
@@ -22,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     AboutComponent,
     UserSettingsFormComponent,
-    DogComponent
+    DogComponent,
+    WelcomeComponent
   ],
   imports: [
     FormsModule,
@@ -39,7 +43,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ClientModule,
     HttpClientModule,
     ButtonsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

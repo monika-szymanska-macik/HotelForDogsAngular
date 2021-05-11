@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router'; 
-import { Client } from '../clients/client';
+import { ActivatedRoute, Router } from '@angular/router';
+
+
 
 import { IDog } from './dog';
 
@@ -31,7 +32,7 @@ export class DogComponent implements OnInit {
         }
   }
   onBack(): void{
-    this.router.navigate(['']);
+    this.router.navigate(['/clients/:clientId']);
   }
 
 
